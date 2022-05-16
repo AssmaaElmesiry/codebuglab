@@ -9,7 +9,9 @@ import { fas } from "@fortawesome/free-solid-svg-icons"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 library.add(fas, fab)
 
+import VueKinesis from "vue-kinesis";
 
 createApp(App)
     .component('fa', FontAwesomeIcon)
+    .use(VueKinesis)
     .mount('#app')

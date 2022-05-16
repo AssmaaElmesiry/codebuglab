@@ -1,6 +1,6 @@
 <template>
     <section class="pt-52">
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap h-full">
             <div class="md:w-1/2 w-full p-9">
                 <h2 class="text-5xl font-bold">
                     About Us
@@ -10,8 +10,13 @@
                 </p>
             </div>
             <div class="md:w-1/2 w-full p-9">
-                <img src="../assets/AboutUs.png" alt="aboutus"/>
+                <kinesis-container class="absolute right-0 top-0  flex justify-end w-full h-full overflow-hidden">
+                    <kinesis-element :strength="50" class="top-1/2 translate-x-1/2 self-center">
+                        <img src="../assets/AboutUs.png" alt="aboutus"/>
+                    </kinesis-element>
+                </kinesis-container>
             </div>
+  
         </div>
     </section>
 </template>

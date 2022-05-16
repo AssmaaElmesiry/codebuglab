@@ -1,6 +1,6 @@
 
 <template>
-    <header class="container md:mx-auto w-full h-20 flex justify-between items-center py-2 px-2relative" :class="{'scrolled-nav': scrolledNav }">
+    <header class="container md:mx-auto w-full h-20 flex justify-between items-center py-2 px-2 relative" :class="{'scrolled-nav': scrolledNav }">
         <div class="lg:h-auto lg:w-auto h-auto w-1/2 flex-none ">
             <img  class="h-auto w-auto" src="../assets/logo.png" alt="logo" />
         </div>
@@ -12,7 +12,7 @@
                 <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Hire a team</a></li>
                 <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Support us</a></li>
             </ul>
-            <div class="absolute text-xl right-7">
+            <div class="absolute text-xl right-2">
                 <fa :icon="icon" @click="toggleMobileNav" v-show="mobile" :class="{'icon-active': mobileNav}" />
             </div>
             <transition name="mobile-nav">
