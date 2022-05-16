@@ -1,0 +1,88 @@
+
+<template>
+    <header class="container md:mx-auto w-full h-20 flex justify-between items-center py-2 px-2relative" :class="{'scrolled-nav': scrolledNav }">
+        <div class="lg:h-auto lg:w-auto h-auto w-1/2 flex-none ">
+            <img  class="h-auto w-auto" src="../assets/logo.png" alt="logo" />
+        </div>
+        <div class="flex flex-grow items-center h-full w-full ">
+            <ul v-show="!mobile" class="flex justify-evenly items-center w-full h-full">
+                <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">About us</a></li>
+                <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Latest packages</a></li>
+                <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Our technology</a></li>
+                <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Hire a team</a></li>
+                <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Support us</a></li>
+            </ul>
+            <div class="absolute text-xl right-7">
+                <fa :icon="icon" @click="toggleMobileNav" v-show="mobile" :class="{'icon-active': mobileNav}" />
+            </div>
+            <transition name="mobile-nav">
+                <ul v-show="mobileNav" class="absolute -top-4 left-0 sm:-left-14 md:-left-28 p-8 bg-blue w-60 h-screen">
+                    <div class="pb-5">
+                        <img src="../assets/logo.png" alt="codebuglablogo"/>
+                    </div>
+                    <li class="flex p-2"><a class="w-full h-full" href="#">About us</a></li>
+                    <li class="flex p-2"><a class="w-full h-full" href="#">Latest packages</a></li>
+                    <li class="flex p-2"><a class="w-full h-full" href="#">Our technology</a></li>
+                    <li class="flex p-2"><a class="w-full h-full" href="#">Hire a team</a></li>
+                    <li class="flex p-2"><a class="w-full h-full" href="#">Support us</a></li>
+                </ul>
+            </transition>
+        </div>
+    </header>
+</template>
+<script>
+    export default{
+        data() {
+            return {
+                scrolledNav: null,
+                mobile: false,
+                mobileNav: false,
+                windowWidth: null,
+                icon: 'bars'
+            }
+        },
+        created(){
+            window.addEventListener('resize', this.checkScreen);
+            this.checkScreen();
+        },
+        mounted() {
+            window.addEventListener("scroll", this.updateScroll)
+        },
+        methods: {
+            toggleMobileNav(){
+                this.mobileNav = !this.mobileNav;
+                this.icon = (this.icon === "bars" ? "xmark" : "bars")
+            },
+            updateScroll() {
+                const scrollPosition = window.scrollY;
+                if (scrollPosition > 50){
+                    this.scrolledNav = true;
+                    return;
+                }
+                this.scrolledNav = false;
+            },
+            checkScreen(){
+                this.windowWidth = window.innerWidth;
+                if (this.windowWidth <= 991){
+                    this.mobile = true;
+                    return;
+                }
+                this.mobile = false;
+                this.mobileNav = false;
+            }
+        },
+    }
+</script>
+<style>
+.mobile-nav-enter-active,
+.mobile-nav-leave-active{
+    transition:  1s ease all;
+}
+.mobile-nav-enter-from,
+.mobile-nav-leave-to{
+    transform: translateX(-240px);
+}
+.mobile-nav-enter-to{
+    transform: translateX(0);
+}
+</style>
