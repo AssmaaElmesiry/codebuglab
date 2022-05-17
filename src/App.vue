@@ -1,19 +1,22 @@
 <script>
 import headerStyle from '@/components/headerStyle.vue'
 import AboutUsVue from './components/AboutUs.vue'
+import PackagesVue from './components/Packages.vue'
 
 export default{
   components:{
     headerStyle,
     AboutUsVue,
+    PackagesVue,
   }
 }
 </script>
 
 <template>
-<main class="container mx-auto md:mx-auto py-2 pt-4 h-screen ">
+<main class="">
   <headerStyle/>
   <AboutUsVue/>
+  <PackagesVue/>
 </main>
 </template>
 

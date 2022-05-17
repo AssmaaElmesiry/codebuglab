@@ -9,8 +9,9 @@ module.exports = {
                 'blue': '#4EB8F4'
             },
             backgroundImage: {
-                'background': "url('./src/assets/background.png')"
-            }
+                'background': "url('./src/assets/background.png')",
+                'Packages': "url('./src/assets/section.png')"
+            },
         },
     },
     plugins: [],
