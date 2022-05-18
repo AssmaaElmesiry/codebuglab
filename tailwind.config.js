@@ -12,6 +12,11 @@ module.exports = {
                 'background': "url('./src/assets/background.png')",
                 'Packages': "url('./src/assets/section.png')"
             },
+            zIndex: {
+                '9': '9',
+                '99': '99',
+                '999': '999',
+            }
         },
     },
     plugins: [],

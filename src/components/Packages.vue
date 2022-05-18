@@ -2,15 +2,15 @@
     <titleStyleVue>
         CodeBugLab in Numbers
     </titleStyleVue>
-    <section class="bg-Packages relative">
-        <div class="before:content-[''] before:absolute before:w-full before:h-full before:bg-black before:z-40">
-            <div class="container mx-auto">
+    <section class="Packages bg-Packages bg-no-repeat bg-cover w-full h-full relative before:!content-[''] before:!flex before:!absolute before:!w-full before:!h-full before:!bg-black before:!z-40">
+        <div class="">
+            <div class="container mx-auto z-50">
                 <div class="py-16">
-                    <ul class="flex justify-around">
-                        <li v-for="item in packages" :key="item.id">
+                    <ul class="flex justify-around relative z-[99]">
+                        <li class="flex flex-col items-center justify-center text-white px-14 py-2 border rounded-md divide-solid border-white" v-for="item in packages" :key="item.id">
                             <img :src="item.src" alt="packages" />
-                            <span>{{item.num}}</span>
-                            <p>{{item.title}}</p>
+                            <span class="text-5xl p-1 font-bold">{{item.num}}</span>
+                            <p class="text-2xl">{{item.title}}</p>
                         </li>
                     </ul>
                 </div>
@@ -56,3 +56,14 @@ export default{
     }
 }
 </script>
+<style>
+/* .Packages::before{
+    content: "" !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4EB8F4B8;
+} */
+</style>
