@@ -1,10 +1,10 @@
 
 <template>
-    <header class="container md:mx-auto w-full h-20 flex justify-between items-center my-8 px-8 relative" :class="{'scrolled-nav': scrolledNav }">
-        <div class="lg:h-auto lg:w-auto h-auto w-1/2 flex-none ">
-            <img  class="h-auto w-auto" src="../assets/logo.png" alt="logo" />
+    <header class="container md:mx-auto w-full h-28 flex justify-between items-center md:px-12 px-8 xl:relative" :class="{'scrolled-nav': scrolledNav }">
+        <div class="flex h-auto w-auto ">
+            <img  class="h-full w-full" src="../assets/logo.png" alt="logo" />
         </div>
-        <div class="flex flex-grow items-center h-full w-full ">
+        <div class="flex  items-center h-full w-full relative">
             <ul v-show="!mobile" class="flex justify-evenly items-center w-full h-full">
                 <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">About us</a></li>
                 <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Latest packages</a></li>
@@ -12,11 +12,11 @@
                 <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Hire a team</a></li>
                 <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Support us</a></li>
             </ul>
-            <div class="absolute text-xl right-8">
+            <div class="absolute text-xl right-8 md:right-14">
                 <fa :icon="icon" @click="toggleMobileNav" v-show="mobile" :class="{'icon-active': mobileNav}" />
             </div>
             <transition name="mobile-nav">
-                <ul v-show="mobileNav" class="absolute -top-4 left-0 sm:-left-8 p-8 bg-blue w-64 h-screen z-50">
+                <ul v-show="mobileNav" class="absolute top-0 left-0  p-8 bg-blue w-64 h-screen z-50">
                     <div class="pb-5">
                         <img src="../assets/logo.png" alt="codebuglablogo"/>
                     </div>

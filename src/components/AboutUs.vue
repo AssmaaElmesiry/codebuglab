@@ -1,11 +1,11 @@
 <template>
-    <section class="pt-52 flex container mx-auto">
+    <section class="xl:pt-52 flex container md:mx-auto md:px-12 px-8">
         <div class="flex xl:flex-row flex-col-reverse">
             <div class="flex flex-col grow-0  p-5 xl:w-1/2">
                 <h2 class="text-5xl font-bold text-blue">
                     About Us
                 </h2>
-                <p class="text-xl pt-12 text-justify leading-10 ">
+                <p class="text-xl xl:pt-12 text-justify leading-10 ">
                     We are startup company creating and maintaining web applications and open source packages. Most of our work based on Laravel framework and We create our packages from our clients work. look around here, you might find something useful for you.
                 </p>
             </div>

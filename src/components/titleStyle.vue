@@ -1,11 +1,13 @@
 <template>
     <div class="flex justify-center my-12">
         <div class="flex items-end">
-            <span class="font-bold text-6xl">{</span>
-            <p class="bg-blue text-5xl text-white font-bold"> 
-                <slot>ppp </slot>
+            
+            <p class="bg-blue  sm:text-5xl text-3xl text-white font-bold relative px-2 uppercase"> 
+                <span class="font-bold sm:text-6xl text-5xl text-black absolute -top-3 -left-3">{</span>
+                    <slot>ppp </slot>
+                <span class="font-bold sm:text-6xl text-5xl text-black absolute -top-3 -right-3">}</span>
             </p>
-            <span class="font-bold text-6xl">}</span>
+            
         </div>
     </div>
 </template>

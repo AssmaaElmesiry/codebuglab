@@ -1,69 +1,61 @@
 <template>
-    <titleStyleVue>
-        CodeBugLab in Numbers
-    </titleStyleVue>
-    <section class="Packages bg-Packages bg-no-repeat bg-cover w-full h-full relative before:!content-[''] before:!flex before:!absolute before:!w-full before:!h-full before:!bg-black before:!z-40">
-        <div class="">
-            <div class="container mx-auto z-50">
-                <div class="py-16">
-                    <ul class="flex justify-around relative z-[99]">
-                        <li class="flex flex-col items-center justify-center text-white px-14 py-2 border rounded-md divide-solid border-white" v-for="item in packages" :key="item.id">
-                            <img :src="item.src" alt="packages" />
-                            <span class="text-5xl p-1 font-bold">{{item.num}}</span>
-                            <p class="text-2xl">{{item.title}}</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <section>
+        <titleStyleVue>
+            Latest packages
+        </titleStyleVue>
+        <div class="container">
+            <ul>
+                <li v-for=" item in packages" :key="item">
+                    <img :src="item.images"/>
+                    <div>
+                        <h2> {{item.Packages_Name}} </h2>
+                        <p> {{item.details}} </p>
+                        <span> {{item.tag}} </span>
+                        <span> {{item.star}} </span>
+                    </div>
+                </li>
+            </ul>            
         </div>
     </section>
 </template>
 <script>
-import titleStyleVue from "./titleStyle.vue";
-export default{
-    data() {
-        return {
-            packages:[
-                {
-                    id:'1',
-                    src: ('./src/assets/package.png'),
-                    num: '4',
-                    title: 'Package'
-                },
-                {
-                    id:'2',
-                    src: ('./src/assets/download.png'),
-                    num: '344',
-                    title: 'Download'
-                },
-                {
-                    id:'3',
-                    src: ('./src/assets/star.png'),
-                    num: '57',
-                    title: 'Stars'
-                },
-                {
-                    id:'4',
-                    src: ('./src/assets/fork.png'),
-                    num: '9',
-                    title: 'Fork'
-                },
-            ]
-        }
-    },
-    components:{
-        titleStyleVue,
+    import titleStyleVue from "./titleStyle.vue";
+    export default{
+        components:{
+            titleStyleVue,
+        },
+        data() {
+            return {
+                packages:[
+                    {
+                        id: 1,
+                        images: ('../src/assets/coding-man.png'),
+                        Packages_Name: 'Packages Name',
+                        details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+                        tag: 'tag',
+                        download: '05',
+                        star: '07',
+                    },
+                    {
+                        id: 2,
+                        images: ('../src/assets/coding-man.png'),
+                        Packages_Name: 'Packages Name',
+                        details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+                        tag: 'tag',
+                        download: '05',
+                        star: '07',
+                    },
+                    {
+                        id: 3,
+                        images: ('../src/assets/coding-man.png'),
+                        Packages_Name: 'Packages Name',
+                        details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+                        tag: 'tag',
+                        download: '05',
+                        star: '07',
+                    },
+                ]
+            }
+        },
     }
-}
 </script>
-<style>
-/* .Packages::before{
-    content: "" !important;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #4EB8F4B8;
-} */
-</style>
