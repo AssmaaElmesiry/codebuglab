@@ -9,6 +9,7 @@ module.exports = {
                 'blue': '#4EB8F4',
                 'colorfrom': 'rgba(78, 184, 244, 0) 0%',
                 'colorto': 'rgba(78, 184, 244, 1) 75%',
+                'gray': '#F2F2F2',
             },
             backgroundImage: {
                 'background': "url('./src/assets/background.png')",
@@ -23,7 +24,8 @@ module.exports = {
                 '999': '999',
             },
             height: {
-                'HSection': '42.438rem'
+                'HSection': '42.438rem',
+                'HSectionSm': '60.438rem',
             },
         },
     },
