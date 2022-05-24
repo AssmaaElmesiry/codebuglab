@@ -4,7 +4,7 @@
         <div class="flex h-auto w-auto ">
             <img  class="h-full w-full" src="../assets/logo.png" alt="logo" />
         </div>
-        <div class="flex  items-center h-full w-full relative">
+        <div class="flex  items-center h-full w-full ">
             <ul v-show="!mobile" class="flex justify-evenly items-center w-full h-full">
                 <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">About us</a></li>
                 <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Latest packages</a></li>
