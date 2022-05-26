@@ -1,6 +1,6 @@
 
 <template>
-    <header class="container md:mx-auto w-full h-28 flex justify-between items-center md:px-12 px-8 xl:relative" :class="{'scrolled-nav': scrolledNav }">
+    <header class="xl:container md:mx-auto w-full h-28 flex justify-between items-center md:px-12 px-8 fixed left-0 right-0 z-99" :class="{'scrolled-nav': scrolledNav }">
         <div class="flex h-auto w-auto ">
             <img  class="h-full w-full" src="../assets/logo.png" alt="logo" />
         </div>
@@ -55,7 +55,7 @@
             },
             updateScroll() {
                 const scrollPosition = window.scrollY;
-                if (scrollPosition > 50){
+                if (scrollPosition > 20){
                     this.scrolledNav = true;
                     return;
                 }
@@ -84,5 +84,8 @@
 }
 .mobile-nav-enter-to{
     transform: translateX(0);
+}
+.scrolled-nav{
+    background-color: #fff !important;
 }
 </style>

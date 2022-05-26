@@ -11,6 +11,7 @@ module.exports = {
                 'colorto': 'rgba(78, 184, 244, 1) 75%',
                 'gray': '#F2F2F2',
                 'Pcolor': '#A3A3A3',
+                'borderColor': '#DDDDDD',
             },
             backgroundImage: {
                 'background': "url('./src/assets/background.png')",
