@@ -6,7 +6,7 @@
         <div class="container md:mx-auto md:px-12 px-8 flex md:flex-row flex-col">
             <div class="flex flex-col text-Pcolor max-w-full max-h-full w-full h-full xl:p-14">
                 <img :src="image" alt="image" class="w-full h-full mb-12"/>
-                <p class="text-Pcolor text-2xl"> {{details}} </p>
+                <p class="text-Pcolor text-2xl leading-normal"> {{details}} </p>
                 <div class="mt-12">
                     <ul class="flex flex-wrap sm:flex-row flex-col">
                         <li class="mr-2 mb-2">
@@ -52,26 +52,29 @@
             <div class="max-w-full max-h-full w-full h-full xl:p-14 ">
                 <h2 class="text-4xl text-blue font-bold mb-9">Contact Us</h2>
                 <p class="text-Pcolor text-lg pb-12">{{disc}}</p>
-                <div class="ww-full flex flex-col">
+                <form class="ww-full flex flex-col">
                     <div class=" mb-5 relative">
-                        <input type="text" placeholder="Your Name" required class="border border-borderColor border-solid rounded w-full pl-12 py-3"/>
+                        <input type="text" required placeholder="Your Name"  class="border border-borderColor  border-solid rounded w-full pl-12 py-3"/>
                         <img :src="user" alt="user" class=" absolute  top-1/2 left-4 w-auto h-auto transform -translate-y-1/2"/>
                     </div>
                     <div class=" mb-5 relative">
-                        <input type="email" placeholder="Your Mail" required class="border border-borderColor border-solid rounded w-full pl-12 py-3"/>
+                        <input type="email" required placeholder="Your Mail"  class="border border-borderColor  border-solid rounded w-full pl-12 py-3"/>
                         <img :src="envelope" alt="envelope" class=" absolute  top-1/2 left-4 w-auto h-auto transform -translate-y-1/2"/>
                     </div>
-                    <textarea placeholder="Your Message" class="border border-borderColor border-solid w-full h-44 pl-3 pt-3 mb-5"></textarea>
-                </div>
+                    <textarea placeholder="Your Message" class="border  border-borderColor border-solid w-full h-44 pl-3 pt-3 mb-5"></textarea>
+                    <submitVue />
+                </form>
             </div>
         </div>
     </section>
 </template>
 <script>
     import titleStyleVue from "./titleStyle.vue";
+    import submitVue from "./buttons/submit.vue";
     export default{
         components:{
             titleStyleVue,
+            submitVue
         },
         data() {
             return {
