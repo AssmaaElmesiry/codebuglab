@@ -6,11 +6,11 @@
         </div>
         <div class="flex  items-center h-full w-full ">
             <ul v-show="!mobile" class="flex justify-evenly items-center w-full h-full">
-                <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">About us</a></li>
-                <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Latest packages</a></li>
-                <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Our technology</a></li>
-                <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Hire a team</a></li>
-                <li class="h-full w-full"><a href="#" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Support us</a></li>
+                <li class="h-full w-full"><a href="#AboutUs" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">About us</a></li>
+                <li class="h-full w-full"><a href="#Packages" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Latest packages</a></li>
+                <li class="h-full w-full"><a href="#OutTechnology" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Our technology</a></li>
+                <li class="h-full w-full"><a href="#OurTeam" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Hire a team</a></li>
+                <li class="h-full w-full"><a href="#Supportus" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Support us</a></li>
             </ul>
             <div class="absolute text-xl right-8 md:right-14">
                 <fa :icon="icon" @click="toggleMobileNav" v-show="mobile" :class="{'icon-active': mobileNav}" />
@@ -20,11 +20,11 @@
                     <div class="pb-5">
                         <img src="../assets/logo.png" alt="codebuglablogo"/>
                     </div>
-                    <li class="flex p-2"><a class="w-full h-full" href="#">About us</a></li>
-                    <li class="flex p-2"><a class="w-full h-full" href="#">Latest packages</a></li>
-                    <li class="flex p-2"><a class="w-full h-full" href="#">Our technology</a></li>
-                    <li class="flex p-2"><a class="w-full h-full" href="#">Hire a team</a></li>
-                    <li class="flex p-2"><a class="w-full h-full" href="#">Support us</a></li>
+                    <li class="flex p-2"><a class="w-full h-full" href="#AboutUs">About us</a></li>
+                    <li class="flex p-2"><a class="w-full h-full" href="#Packages">Latest packages</a></li>
+                    <li class="flex p-2"><a class="w-full h-full" href="#OutTechnology">Our technology</a></li>
+                    <li class="flex p-2"><a class="w-full h-full" href="#OurTeam">Hire a team</a></li>
+                    <li class="flex p-2"><a class="w-full h-full" href="#Supportus">Support us</a></li>
                 </ul>
             </transition>
         </div>

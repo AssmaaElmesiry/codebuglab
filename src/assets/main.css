@@ -5,6 +5,10 @@ body {
     font-family: 'Open Sans';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 textarea:focus,
 input:focus {
     outline: 1px solid #4EB8F4;

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="OutTechnology">
         <titleStyleVue>
             OUR TECHNOLOGY STACK
         </titleStyleVue>
@@ -31,7 +31,7 @@
                         </div>
                         <li class="border rounded-md px-12 py-4 mt-6 bg-blue text-white font-bold text-4xl relative">
                             Back End
-                            <div class="absolute xl:-bottom-5 bottom-16 -translate-y-2/4 left-1/2  w-0 h-0 border-solid Triangle"></div>
+                            <div class="absolute xl:-bottom-5 bottom-20 -translate-y-2/4 left-1/2  w-0 h-0 border-solid Triangle"></div>
                         </li>
                     </div>
                     <div class="max-w-full w-72 mb-8 relative">

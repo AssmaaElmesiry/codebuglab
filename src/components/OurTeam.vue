@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="OurTeam">
         <titleStyleVue>
             Hire a Team
         </titleStyleVue>
@@ -28,7 +28,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="mt-12 flex justify-center">
+                    <div class="md:mt-12 mt-4 mb-4 flex justify-center">
                         <ul class="w-1/2 flex justify-between text-3xl">
                             <li class="text-blue w-5 text-center">
                                 <a href="#" class="flex justify-center w-full">
@@ -62,7 +62,7 @@
                         <img :src="envelope" alt="envelope" class=" absolute  top-1/2 left-4 w-auto h-auto transform -translate-y-1/2"/>
                     </div>
                     <textarea placeholder="Your Message" class="border  border-borderColor border-solid w-full h-44 pl-3 pt-3 mb-5"></textarea>
-                    <submitVue />
+                    <submitVue>submit</submitVue>
                 </form>
             </div>
         </div>

@@ -1,5 +1,5 @@
 <template>
-    <section class="pt-52 flex container md:mx-auto md:px-12 px-8">
+    <section id="AboutUs" class="pt-52 flex container md:mx-auto md:px-12 px-8">
         <div class="flex xl:flex-row flex-col-reverse">
             <div class="flex flex-col grow-0  p-5 xl:w-1/2">
                 <h2 class="text-5xl font-bold text-blue">

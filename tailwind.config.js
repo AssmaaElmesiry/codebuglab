@@ -12,6 +12,7 @@ module.exports = {
                 'gray': '#F2F2F2',
                 'Pcolor': '#A3A3A3',
                 'borderColor': '#DDDDDD',
+                'bgfooter': '#232F41',
             },
             backgroundImage: {
                 'background': "url('./src/assets/background.png')",
