@@ -3,15 +3,15 @@
         <titleStyleVue>
             Latest packages
         </titleStyleVue>
-        <div class="container md:mx-auto md:px-12 px-8">
-            <ul class="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-3">
+        <div class="container md:mx-auto md:px-12 px-8 xl:block flex justify-center">
+            <ul class="grid grid-cols-medo gap-7">
                 <li v-for=" item in packages" :key="item" class="relative group text-white mb-5 w-full h-full overflow-hidden">
                     <img :src="item.images" alt="package" class="w-full h-full"/>
-                    <div class="test p-5 absolute bottom-0 left-0 right-0 overflow-hidden h-2/5 w-full ease-in duration-300 bg-gradient-to-b from-colorfrom to-colorto group-hover:h-full">
-                        <div class="test2 left-0 px-5 group-hover:absolute group-hover:top-1/3 ">
+                    <div class="main p-5 absolute bottom-0 left-0 right-0  h-1/3 w-full ease-in duration-300 bg-gradient-to-b from-colorfrom to-colorto group-hover:h-full">
+                        <div class="mask left-0 px-5 group-hover:absolute group-hover:top-1/3 ">
                             <h2 class="text-3xl py-8"> {{item.Packages_Name}} </h2>
                             <div class="item ease-in duration-300 ">
-                                <p class="w-4/5 text-base pb-5"> {{item.details}} </p>
+                                <p class="sm:w-4/5 w-full text-base"> {{item.details}} </p>
                                 <div class="flex flex-col">
                                     <span class="text-sm py-1"> Tag •  {{item.tag}} </span>
                                     <div class="flex sm:flex-row flex-col justify-between">
@@ -90,42 +90,48 @@ li:hover >img{
     transform: scale(1.5) rotate(-10deg);
     transition: all .4s ease-in;
 }
-.group:hover .test{
-    height: 100%;
+.group:hover .main{
+    height: 70%;
 }
-.group .test2{
+.group .mask{
     position: absolute;
     top: 0;
     height: 100%;
 }
-.group .test2 .item{
+.group .main .item{
     opacity: 0;
 }
-.group:hover .test2{
+/* .group:hover .mask{
     position: absolute;
     top: 0;
-    height: 100%;
-}
-.group:hover .test2 .item{
+    height: 70%;
+} */
+.group:hover .mask .item{
     opacity: 1;
 }
-@media(max-width: 687px){
-    .group .test2{
-        top: 0;
+@media(max-width: 640px){
+    .group .mask{
+        top: -35px;
     }
 }
 @media(max-width: 487px){
-    .group .test2{
-        position: absolute;
+.group:hover .main{
+    height: 100%;
+}
+.group .mask{
         top: 0;
     }
-    .group .test2 h2{
-        padding-top: 0;
-        padding-bottom: 1rem;
+}
+@media(max-width: 320px){
+
+    .main .mask h2{
+        font-size: 1rem;
+        padding: 0;
     }
-    .group:hover .test2{
-        position: absolute;
-        top: 0;
+    .main .mask p{
+        font-size: 10px;
+        width: 100%;
+        padding-bottom: 0;
     }
 }
 </style>

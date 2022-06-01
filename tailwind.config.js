@@ -19,7 +19,7 @@ module.exports = {
                 'Packages': "url('./src/assets/section.png')",
             },
             backgroundColor: {
-                'bgPackages': 'linear-gradient(to bottom, rgba(78, 184, 244, 0) 0%, rgba(78, 184, 244, 0.8) 75%)',
+                'bgPackages': 'linear-gradient(to bottom, rgba(78, 184, 244, 0) 0%, rgba(78, 184, 244, 1) 75%)',
             },
             zIndex: {
                 '9': '9',
@@ -29,6 +29,12 @@ module.exports = {
             height: {
                 'HSection': '42.438rem',
                 'HSectionSm': '60.438rem',
+            },
+            gridTemplateColumns: {
+                'medo': 'repeat(auto-fill, minmax(250px, 460px))',
+            },
+            dropShadow: {
+                'img': '2px 4px 6px #4db8f4',
             },
         },
     },

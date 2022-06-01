@@ -12,7 +12,7 @@
             <div class="w-auto grow">
                 <kinesis-container class="">
                     <kinesis-element :strength="50" class="">
-                        <img class="w-full h-full p-8" src="../assets/AboutUs.png" alt="aboutus"/>
+                        <img class="w-full h-full p-8" style="filter: drop-shadow(2px 4px 6px #4db8f4) ;" src="../assets/AboutUs.png" alt="aboutus"/>
                     </kinesis-element>
                 </kinesis-container>
             </div>

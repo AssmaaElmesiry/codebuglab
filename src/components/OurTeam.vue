@@ -5,7 +5,7 @@
         </titleStyleVue>
         <div class="container md:mx-auto md:px-12 px-8 flex md:flex-row flex-col">
             <div class="flex flex-col text-Pcolor max-w-full max-h-full w-full h-full xl:p-14">
-                <img :src="image" alt="image" class="w-full h-full mb-12"/>
+                <img :src="image" alt="image" class="w-full h-full mb-12" style="filter: drop-shadow(2px 4px 6px #4db8f4) ;"/>
                 <p class="text-Pcolor text-2xl leading-normal"> {{details}} </p>
                 <div class="mt-12">
                     <ul class="flex flex-wrap sm:flex-row flex-col">
@@ -61,7 +61,10 @@
                         <input type="email" required placeholder="Your Mail"  class="border border-borderColor  border-solid rounded w-full pl-12 py-3"/>
                         <img :src="envelope" alt="envelope" class=" absolute  top-1/2 left-4 w-auto h-auto transform -translate-y-1/2"/>
                     </div>
-                    <textarea placeholder="Your Message" class="border  border-borderColor border-solid w-full h-44 pl-3 pt-3 mb-5"></textarea>
+                    <div class="mb-5 relative">
+                        <textarea placeholder="Your Message" class="border  border-borderColor border-solid w-full h-44 pl-12 pt-3 "></textarea>
+                        <img :src="comment" alt="comment" class=" absolute  top-4 left-4 w-auto h-auto"/>
+                    </div>
                     <submitVue>submit</submitVue>
                 </form>
             </div>
@@ -83,6 +86,7 @@
                 disc:"If you want to ask us about our work or to hire us, feel free to send us message here, but don't send us about any problem in the package unless it's security issue, there is an issue section in github your can reach out to us there.",
                 user: ('../src/assets/user.png'),
                 envelope: ('../src/assets/envelope.png'),
+                comment: ('../src/assets/comment.png')
             }
         },
     }
