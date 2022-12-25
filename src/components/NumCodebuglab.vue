@@ -26,25 +26,25 @@ export default{
             packages:[
                 {
                     id:'1',
-                    src: ('../assets/package.png'),
+                    src: ('../src/assets/package.png'),
                     num: '4',
                     title: 'Package'
                 },
                 {
                     id:'2',
-                    src: ('./src/assets/download.png'),
+                    src: ('../src/assets/download.png'),
                     num: '344',
                     title: 'Download'
                 },
                 {
                     id:'3',
-                    src: ('./src/assets/star.png'),
+                    src: ('../src/assets/star.png'),
                     num: '57',
                     title: 'Stars'
                 },
                 {
                     id:'4',
-                    src: ('./src/assets/fork.png'),
+                    src: ('../src/assets/fork.png'),
                     num: '9',
                     title: 'Fork'
                 },
