@@ -8,7 +8,7 @@
                 <div class="py-16 flex justify-center">
                     <ul class="flex sm:flex-row flex-wrap justify-between content-center flex-col w-full relative z-[99]">
                         <li class="flex flex-col items-center justify-center  text-white px-14 m-5 sm:w-52 w-full py-2 border rounded-md divide-solid border-white" v-for="item in packages" :key="item.id">
-                            <img :src="'storage/' + item.src" alt="packages" />
+                            <img :src="item.src" alt="packages" />
                             <span class="text-5xl p-1 font-bold">{{item.num}}</span>
                             <p class="text-2xl">{{item.title}}</p>
                         </li>
@@ -26,7 +26,7 @@ export default{
             packages:[
                 {
                     id:'1',
-                    src: ('../src/assets/package.png'),
+                    src: ('../../src/assets/package.png'),
                     num: '4',
                     title: 'Package'
                 },
