@@ -26,7 +26,7 @@ export default{
             packages:[
                 {
                     id:'1',
-                    src: ('/static/assets/package.png'),
+                    src: ('../assets/package.png'),
                     num: '4',
                     title: 'Package'
                 },
