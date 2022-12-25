@@ -7,7 +7,7 @@
             </div>
             <div class="flex  items-center h-full w-full ">
                 <ul v-show="!mobile" class="flex justify-evenly items-center w-full h-full">
-                    <li class="h-full w-full"><a href="#AboutUs" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">About us</a></li>
+                    <li class="h-full w-full"><a href="#AboutUs" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">About llllllus</a></li>
                     <li class="h-full w-full"><a href="#Packages" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Latest packages</a></li>
                     <li class="h-full w-full"><a href="#OutTechnology" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Our technology</a></li>
                     <li class="h-full w-full"><a href="#OurTeam" class="text-blue font-bold text-lg h-full w-full flex items-center justify-center">Hire a team</a></li>
