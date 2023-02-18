@@ -13,6 +13,8 @@
 </template>
 <script>
     import titleStyleVue from "./titleStyle.vue";
+    import share from "../assets/share.png"
+
     export default{
         components:{
             titleStyleVue,
@@ -20,7 +22,7 @@
         data() {
             return {
                 disc: 'Most of our packages are free to use, if you like our work share our packages with your colleagues and coworkers, you can subscribe to our newsletter so we can reach to you with all new packages and updates.',
-                img: ('./src/assets/share.png'),
+                img: share,
             }
         },
     }

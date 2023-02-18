@@ -35,6 +35,9 @@
     import titleStyleVue from "./titleStyle.vue";
     import DownloadVue from "./buttons/Download.vue";
     import AllPackages from '@/components/buttons/AllPackages.vue';
+    import coding from "../assets/coding-man";
+    import downloadIcon from "../assets/downloadIcon.png";
+    import starIcon from "../assets/starIcon.png"
     export default{
         components:{
             titleStyleVue,
@@ -46,36 +49,36 @@
                 packages:[
                     {
                         id: 1,
-                        images: ('../src/assets/coding-man.png'),
+                        images: coding,
                         Packages_Name: 'Packages Name',
                         details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
                         tag: 'tag',
-                        downloadIcon: ('../src/assets/downloadIcon.png'),
+                        downloadIcon: downloadIcon,
                         download: '05',
-                        starIcon: ('../src/assets/starIcon.png'),
+                        starIcon: starIcon,
                         star: '07',
                     },
                     {
                         id: 2,
-                        images: ('../src/assets/coding-man.png'),
+                        images: coding,
                         Packages_Name: 'Packages Name',
                         details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
                         tag: 'tag',
-                        downloadIcon: ('../src/assets/downloadIcon.png'),
+                        downloadIcon: downloadIcon,
                         download: '05',
                         star: '07',
-                        starIcon: ('../src/assets/starIcon.png'),
+                        starIcon: starIcon,
                     },
                     {
                         id: 3,
-                        images: ('../src/assets/coding-man.png'),
+                        images: coding,
                         Packages_Name: 'Packages Name',
                         details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
                         tag: 'tag',
-                        downloadIcon: ('../src/assets/downloadIcon.png'),
+                        downloadIcon: downloadIcon,
                         download: '05',
                         star: '07',
-                        starIcon: ('../src/assets/starIcon.png'),
+                        starIcon: starIcon,
                     },
                 ]
             }

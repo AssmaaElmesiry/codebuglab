@@ -69,6 +69,20 @@
 </template>
 <script>
     import titleStyleVue from "./titleStyle.vue";
+    import html5 from "../assets/html5.png";
+    import css3 from '../assets/css3.png';
+    import bootstrap from "../assets/bootstrap.png";
+    import javascript from "../assets/javascript.png";
+    import jquery from "../assets/jquery.png";
+    import nodejs from "../assets/nodejs.png";
+    import sass from "../assets/sass.png";
+    import Vuejs from "../assets/Vuejs.png";
+    import emmet from "../assets/emmet.png";
+    import php from "../assets/php.png";
+    import MySQL from "../assets/MySQL.png";
+    import webpack from "../assets/webpack.png";
+    import Photoshop from "../assets/Photoshop.png";
+
     export default{
         components:{
             titleStyleVue,
@@ -77,27 +91,27 @@
             return {
                 frontEnd:[
                     {
-                        logo: ('../src/assets/html5.png'),
+                        logo: html5,
                         name: 'html5',
                     },
                     {   
-                        logo: ('../src/assets/css3.png'),
+                        logo: css3,
                         name: 'css3',
                     },
                     {
-                        logo: ('../src/assets/bootstrap.png'),
+                        logo: bootstrap,
                         name: 'bootstrap'    
                     },
                     {
-                        logo: ('../src/assets/javascript.png'),
+                        logo: javascript,
                         name: 'javascript'    
                     },
                     {
-                        logo: ('../src/assets/jquery.png'),
+                        logo: jquery,
                         name: 'jquery'    
                     },
                     {
-                        logo: ('../src/assets/nodejs.png'),
+                        logo: nodejs,
                         name: 'nodejs'    
                     },
                     {
@@ -109,13 +123,13 @@
                         name: 'Vuejs'    
                     },
                     {
-                        logo: ('../src/assets/emmet.png'),
+                        logo: emmet,
                         name: 'emmet'    
                     } 
                 ],
                 backEnd:[
                     {
-                        logo: ('../src/assets/php.png'),
+                        logo: php,
                         name: 'php',
                     },
                     {   
@@ -125,17 +139,17 @@
                 ],
                 Database:[
                     {
-                        logo: ('../src/assets/MySQL.png'),
+                        logo: MySQL,
                         name: 'MySQL',
                     },
                 ],
                 Others:[
                     {
-                        logo: ('../src/assets/webpack.png'),
+                        logo: webpack,
                         name: 'webpack',
                     },
                     {   
-                        logo: ('../src/assets/Photoshop.png'),
+                        logo: Photoshop,
                         name: 'Photoshop',
                     },
                 ],

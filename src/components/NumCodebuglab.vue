@@ -20,31 +20,35 @@
 </template>
 <script>
 import titleStyleVue from "./titleStyle.vue";
+import packages from "../assets/package.png"
+import download from "../assets/download.png"
+import star from "../assets/star.png"
+import fork from "../assets/fork.png"
 export default{
     data() {
         return {
             packages:[
                 {
                     id:'1',
-                    src: ('../../src/assets/package.png'),
+                    src: packages,
                     num: '4',
                     title: 'Package'
                 },
                 {
                     id:'2',
-                    src: ('../src/assets/download.png'),
+                    src: download,
                     num: '344',
                     title: 'Download'
                 },
                 {
                     id:'3',
-                    src: ('../src/assets/star.png'),
+                    src: star,
                     num: '57',
                     title: 'Stars'
                 },
                 {
                     id:'4',
-                    src: ('../src/assets/fork.png'),
+                    src: fork,
                     num: '9',
                     title: 'Fork'
                 },

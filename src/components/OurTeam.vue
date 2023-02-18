@@ -74,6 +74,11 @@
 <script>
     import titleStyleVue from "./titleStyle.vue";
     import submitVue from "./buttons/submit.vue";
+    import teamsection from "../assets/teamsection.png";
+    import user from "../assets/user.png";
+    import envelope from "../assets/envelope.png";
+    import comment from "../assets/comment.png";
+
     export default{
         components:{
             titleStyleVue,
@@ -81,12 +86,12 @@
         },
         data() {
             return {
-                image: ('../src/assets/teamsection.png'),
+                image: teamsection,
                 details: 'If you looking for high efficiency stuff to develop and test your application you can hire us, and our packages is a living proof of the good work we do. for more information send us message throw contact us form.',
                 disc:"If you want to ask us about our work or to hire us, feel free to send us message here, but don't send us about any problem in the package unless it's security issue, there is an issue section in github your can reach out to us there.",
-                user: ('../src/assets/user.png'),
-                envelope: ('../src/assets/envelope.png'),
-                comment: ('../src/assets/comment.png')
+                user: user,
+                envelope: envelope,
+                comment: comment
             }
         },
     }
