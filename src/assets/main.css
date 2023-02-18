@@ -3,6 +3,7 @@
 @tailwind utilities;
 body {
     font-family: 'Open Sans';
+    background-image: url(../assets/background.png)
 }
 
 html {
