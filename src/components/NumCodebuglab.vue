@@ -20,10 +20,10 @@
 </template>
 <script>
 import titleStyleVue from "./titleStyle.vue";
-import packages from "../assets/package.png"
-import download from "../assets/download.png"
-import star from "../assets/star.png"
-import fork from "../assets/fork.png"
+import packages from "../assets/package.png";
+import download from "../assets/download.png";
+import star from "../assets/star.png";
+import fork from "../assets/fork.png";
 export default{
     data() {
         return {
@@ -70,4 +70,7 @@ export default{
     left: 0;
     background-color: #4EB8F4B8;
 } */
+.NumCodebuglab{
+    background-color: linear-gradient(to bottom, rgba(78, 184, 244, 0) 0%, rgba(78, 184, 244, 1) 75%)
+}
 </style>
