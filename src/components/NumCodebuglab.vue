@@ -71,6 +71,6 @@ export default{
     background-color: #4EB8F4B8;
 } */
 .NumCodebuglab{
-    background-color: linear-gradient(to bottom, rgba(78, 184, 244, 0) 0%, rgba(78, 184, 244, 1) 75%)
+    background-image: linear-gradient(to bottom, rgba(78, 184, 244, 0) 0%, rgba(78, 184, 244, 1) 75%)
 }
 </style>

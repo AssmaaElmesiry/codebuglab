@@ -80,6 +80,7 @@
     import emmet from "../assets/emmet.png";
     import php from "../assets/php.png";
     import MySQL from "../assets/MySQL.png";
+    import laravel from "../assets/laravel.png"
     import webpack from "../assets/webpack.png";
     import Photoshop from "../assets/Photoshop.png";
 
@@ -115,11 +116,11 @@
                         name: 'nodejs'    
                     },
                     {
-                        logo: ('../src/assets/sass.png'),
+                        logo: sass,
                         name: 'sass'    
                     },
                     {
-                        logo: ('../src/assets/Vuejs.png'),
+                        logo: Vuejs,
                         name: 'Vuejs'    
                     },
                     {
@@ -133,7 +134,7 @@
                         name: 'php',
                     },
                     {   
-                        logo: ('../src/assets/laravel.png'),
+                        logo: laravel,
                         name: 'laravel',
                     },
                 ],

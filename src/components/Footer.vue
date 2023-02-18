@@ -17,6 +17,7 @@
 <script>
     import submitVue from "./buttons/submit.vue";
     import downfooterVue from "./downfooter.vue";
+    import footer from "../assets/footer.png"
     export default{
         components:{
             submitVue,
@@ -24,7 +25,7 @@
         },
         data() {
             return {
-                img:('../src/assets/footer.png'),
+                img: footer,
                 title: 'Stay tuned !',
                 subscribe:'subscribe our newsletter and get notifications to stay update',
             }
