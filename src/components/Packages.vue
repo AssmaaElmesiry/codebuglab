@@ -35,7 +35,7 @@
     import titleStyleVue from "./titleStyle.vue";
     import DownloadVue from "./buttons/Download.vue";
     import AllPackages from '@/components/buttons/AllPackages.vue';
-    import coding from "../assets/coding-man";
+    import coding from "../assets/coding-man.png";
     import downloadIcon from "../assets/downloadIcon.png";
     import starIcon from "../assets/starIcon.png"
     export default{
