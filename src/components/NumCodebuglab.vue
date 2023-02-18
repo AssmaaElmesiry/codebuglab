@@ -3,7 +3,7 @@
         <titleStyleVue>
             CodeBugLab in Numbers
         </titleStyleVue>
-        <div class="NumCodebuglab bg-Packages bg-no-repeat bg-cover w-full h-full relative">
+        <div class="NumCodebuglab bg-no-repeat bg-cover w-full h-full relative">
             <div class="container mx-auto px-12 z-50 ">
                 <div class="py-16 flex justify-center">
                     <ul class="flex sm:flex-row flex-wrap justify-between content-center flex-col w-full relative z-[99]">
@@ -71,7 +71,6 @@ export default{
     background-color: #4EB8F4B8;
 } */
 .NumCodebuglab{
-    background-image: url(../assets/section.png);
     background-image: linear-gradient(to bottom, rgba(78, 184, 244, 0) 0%, rgba(78, 184, 244, 1) 75%)
 }
 </style>
